@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int counter = 3;
+
+    int i = 1;
+    while(i <= counter){
+    int column = 0;
+        while(column < counter - i){ 
+            printf(" ");
+            column++;
+        }
+        int h = 0;
+        while(h < 2*i -1){
+        printf("*");
+        h++;
+    }
+        printf("\n");
+        i++;
+    }
+   //bottom to middle
+    i= counter - 1;
+
+    while(i>=1){
+    int column = 0;
+        while(column < counter - i){ 
+            printf(" ");
+            column++;
+        }
+        int h=0;
+        while(h < 2*i -1){
+        printf("*");
+        h++;
+    }
+        printf("\n");
+        i--;
+    }
+    return 0;
+}
